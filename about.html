@@ -1,0 +1,86 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+<title>CourtYard</title>
+<script>
+$(document).ready(function() {
+  $(document).delegate('.open', 'click', function(event){
+    $(this).addClass('oppenned');
+    event.stopPropagation();
+  })
+  $(document).delegate('body', 'click', function(event) {
+    $('.open').removeClass('oppenned');
+  })
+  $(document).delegate('.cls', 'click', function(event){
+    $('.open').removeClass('oppenned');
+    event.stopPropagation();
+  });
+});
+</script>
+</head>
+
+<body>
+<div class="cover">
+  <div class="row">
+	<img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="wallpaper.jpg">
+		<div class="container">
+			<div class="open">
+				<span class="cls"></span>
+					<span>
+						<ul class="sub-menu ">
+							<li> <a href="index.html"><i class="fas fa-home fa-2x"> </i> Home</a></li>
+							<li><br></li>
+							<li> <a href="images.html"><i class="fas fa-image fa-2x"></i> Images</a></li>
+							<li><br></li>
+							<li> <a href="about.html"><i class="fas fa-address-card fa-2x"> </i> About</a></li>
+							<li><br></li>
+							<li> <a href="contact.html"><i class="fas fa-phone fa-2x"> </i> Contact</a></li>
+						</ul>
+					</span>
+				<span class="cls"></span>
+			</div>
+		</div>
+  </div>
+</div>	
+	
+	
+	<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	<br>
+	<h1 style="padding:10px;">About Alibaug</h1>
+		<P style="text-align:justify; padding:20px;">
+			Alibag is the a small town on the coast of the Arabian Sea, with a vast seashore stretching from Rewas to Revdanda. Alibag is famous for coconut and betelnut plantations and a large number of historic places to visit. Lately Alibag has become a preferred weekend holiday destination for people from Mumbai looking for an beautiful getaway from the hustle and bustle of urban Mumbai.
+			Alibag used to be the headquarters the great Maratha Admiral, Kanhoji Angre and has the famous Kolaba fort in the sea. Kanhoji Angre created the town of Alibag towards end of 17th century. Legend has it that a wealthy Muslim named Ali Owned many plantations, which gave the town the name Alibag. Alibag is the seat of District Administration of Raigad (formerly Kolaba) district since 1852. The name Kolaba is attributed to a Sea Fort Kolaba built by Shivaji the great, in 1680 to fight the mighty naval prowess of the Siddis' (Abyssenians) of Janjira and the British of Mumbai. Kolaba fort is famous for many battles, between Siddis and Kanhoji Angre, the British and the Portugese.
+		</p>
+			<img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="fort.jpg" style="width:100%; height:auto;" ></img>
+		<br>
+		<p style="text-align:justify;  padding:20px;">
+			The Kolaba Fort is accessible only at low ebb through a 1 km long land strip that is covered during high tide. The fort has a sweet water well in the middle, temples, fortifications and guns facing the sea. Being on the fort gives you a taste of the history of Alibag.
+		Alibag is surrounded by beautiful pristine beaches such as Aakshi, Nagaon , Kihim, Kashid (white sand beaches) etc. Other places of interest are the Vikram Vinayaka temple, Revdanda, Vikram Ispat factory, Kanakeshwar, temples of Sri Datta, Shitala Devi, Hingulja Devi, Sri Rameshwar.
+		Alibag produces classic local products like seasonal white onions, tamrind balls, tender coconut, dried fish of tremendous variety, water melons, palm fruit (Tadgola) Jamun, Mangoes of local and Alphonso variety, Flowers with intense fragnance like Sonchampa, Bakul etc. Fresh fish such as Pomfret, Surmai, Ghol, Saranga are also available in the Alibag.
+		Alibag provides an excellent holiday destination as well as a great place to visit historical landmarks.
+			</p>
+	</div>
+	</div>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="footer">
+	</div>
+	
+</body>
+</html>

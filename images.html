@@ -1,0 +1,92 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+<title>CourtYard</title>
+<script>
+$(document).ready(function() {
+  $(document).delegate('.open', 'click', function(event){
+    $(this).addClass('oppenned');
+    event.stopPropagation();
+  })
+  $(document).delegate('body', 'click', function(event) {
+    $('.open').removeClass('oppenned');
+  })
+  $(document).delegate('.cls', 'click', function(event){
+    $('.open').removeClass('oppenned');
+    event.stopPropagation();
+  });
+});
+</script>
+</head>
+
+<body>
+<div class="cover">
+  <div class="row">
+	<img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="wallpaper.jpg">
+		<div class="container">
+			<div class="open">
+				<span class="cls"></span>
+					<span>
+						<ul class="sub-menu ">
+							<li> <a href="index.html"><i class="fas fa-home fa-2x"> </i> Home</a></li>
+							<li><br></li>
+							<li> <a href="images.html"><i class="fas fa-image fa-2x"></i> Images</a></li>
+							<li><br></li>
+							<li> <a href="about.html"><i class="fas fa-address-card fa-2x"> </i> About</a></li>
+							<li><br></li>
+									<li> <a href="contact.html"><i class="fas fa-phone fa-2x"> </i> Contact</a></li>
+						</ul>
+					</span>
+				<span class="cls"></span>
+			</div>
+		</div>
+  </div>
+</div>
+<br>	
+<h1 style="text-align:center;">SeaGull In Pictures...!<h1>
+<br>
+<img src="1.jpg" class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding:20px; border-radius:3px solid #ooo;"></img>
+<img src="2.jpg" class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding:20px;"></img>
+<img src="3.jpg" class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding:20px;"></img>
+<img src="4.jpg" class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding:20px;"></img>
+
+
+</div>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+
+	
+
+	<div class="footer">
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
