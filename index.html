@@ -1,172 +1,302 @@
 <html>
 <head>
-	<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<style>
-body{
-	
-	font-family: 'PT Serif', serif;
-	font-size: 15px;
-	font-style: bold;
-	background-image: linear-gradient(90deg,#da4453,#89216b);
-	margin: 10px;
-}
-div{}	
-.welcome{
-	position:absolute;
-	top: -5px;
-	height: auto;
-	width: 90%;
-	font-family:'Aladin', cursive;
-	font-size:40px;
-	text-align:center;
-	color:#fff;
-	background-image: linear-gradient(90deg,#89216b,#da4453);
-	border-radius:20px;
-	border-style:dotted;
-	border-color:#fff;;
-	font-size: 80px;
-}
-.right{
-	position:absolute;
-	top: 20px;
-	RIGHT:1PX;
-	height: auto;
-	width:100%;
-	padding:10px;
-	background-color:#fad7da
+<link href="css/style.css"  rel="stylesheet" >
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+ 
+<title>SeaGull</title>
+<script>
+$(document).ready(function() {
+  $(document).delegate('.open', 'click', function(event){
+    $(this).addClass('oppenned');
+    event.stopPropagation();
+  })
+  $(document).delegate('body', 'click', function(event) {
+    $('.open').removeClass('oppenned');
+  })
+  $(document).delegate('.cls', 'click', function(event){
+    $('.open').removeClass('oppenned');
+    event.stopPropagation();
+  });
+});
+</script>
+</head>
 
-}
-.left{
-	position: relative;
-	top: 20px;
-	height: auto;
-	padding:10px;
-	background-color:#fad7da
-	
-}
-img {
-	position: relative;
-	top: -20px;
-	left: 40px;
-	border-radius: 200px;
-	height: 215px;
-	border-style: dotted;
-	border-width:7px;
-	border-color:#fff;
-	align:center;
-}
-h2,h4,h6{
-	font-family: 'PT Serif', serif;
-	color:#89216b;
-	
-}
-table,tr,th,td{
-	border-style:solid;
-	border-width:1px;
-}
-
-</style>
 <body>
-	<br>
-	<br>
-<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">	
-				<div class="pic">
-					<img src="me1.jpg">
-				</div>
-			</div>
 
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">	
-				<div class="welcome">
-					<h1>Prathmesh Vilas Shirke</h1>
-				</div>
-			</div>
-		</div>		
-	<br>
-	<br>
-	<br>
-	<div class="row">
-		<div class="col-xs-10 col-sm-10 col-md-3 col-lg-3">	
-			<div class="left">
-					<h2>PERSONAL INFO.</h2>
-				<hr>
-				<br>
-				<h4>Name:</h4>	Prathmesh Vilas Shirke<br>
-				<h4>DOB:</h4>	25-08-2000<br>
-				<h4>Gender:</h4> MALE<br>
-				<h4>Nationality:</h4> Indian<br>
-				<br>
-				<h2>CONTACT DETAILS</h2>
-				<hr>
-				<h4>Phone:</h4> 8788114797<br>
-				<h4>Email:</h4> prathmesh.shirke.45@gmail.com<br>
-				<h4>Address:</h4> D-101, Bhagirathi Vishwa,Aptewadi,Badlapur(E), 421503<br>
-			</div>
-		</div>
-		<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-			<div class="right">
-				<h2>WORK EXPERIENCE</h2>
-				<hr>
-				<p> <h6>Working As Free Lancer "SHIRKE SOLUTIONS" Since 1 Year. Worked On Some Of The Following Projects:</h6> </p>
-				<p> 1. <a href="https://prathmeshhhhhh.github.io/seagull/index.html">SEAGULL</a> <br>
-				2. Graphics Designed For GANGA EXPRESS SERVISES<br>
-				3. Graphics Designed For VERVE 2019<br>
-				4. Worked On Scoring System For VERVE 2019<br>
-				</p>
-				<br>
-			
-				<h2>EDUCATION</h2>
-				<hr>	
-				<br>
-				<table>
-					<tr>
-						<th>SR.</th>
-						<th>QUA.</th>
-						<th>INST. NAME</th>
-						<th>PER</th>
-					</tr>
-						<tr>
-						<td>1.</td>
-						<td>SSC</td>
-						<td>D.G.N.Vidyalaya</td>
-						<td>80%</td>
-					</tr>
-					<tr>
-						<td>2.</td>
-						<td>Diploma</td>
-						<td>Vidyalankar Polytechnic</td>
-						<td>87.88%</td>
-					</tr>
-					<tr>
-						<td>3.</td>
-						<td>B.E.</td>
-						<td>Datta Meghe C. E.</td>
-						<td>_____</td>
-					</tr>
-				</table>
-				<br>
-				<h2>PROGRAMING/ SCRIPTING LANGUAGES KNOWN</h2>
-				<hr>
-				<p> 1. JAVA<br>
-				2. JSP<br>
-				3. PHP<br>
-				4. HTML/CSS<br>
-				5.C++<br>
-				</p>
-				<br>
-				<h2>CERTIFICATION</h2>
-				<hr>
-				<p> 1. DTP(Desktop Publication)<br>		
-				</p>
+<div class="cover">
+  <div class="row">
+	<img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="container.jpg">
+		<div class="container">
+			<div class="open">
+				<span class="cls"></span>
+					<span>
+						<ul class="sub-menu ">
+							<li><br></li>
+							<li> <a href="index.html"><i class="fas fa-home fa-2x"> </i> Home</a></li>
+							<li><br></li>
+							<li> <a href="#image"><i class="fas fa-image fa-2x"></i> Images</a></li>
+							<li><br></li>
+							<li> <a href="#aboutus"><i class="fas fa-address-card fa-2x"> </i> About</a></li>
+							<li><br></li>
+							<li> <a href="#contact"><i class="fas fa-phone fa-2x"> </i> Contact</a></li>
+						</ul>
+					</span>
+				<span class="cls"></span>
 			</div>
 		</div>
 	</div>
-</div>	
+</div>
+<style>
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  padding:300px;
+}
+
+#customers td, #customers th {
+  border: 1px solid #000;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0d758e;
+  color: white;
+}
+</style>
+</style>
+</head>
+
+<body>
+<div class="cover">
+  <div class="row">
+  
+  
+  
+  
+  
+  
+  <br>	
+		<h1 style="text-align:center; padding:45px;" id="image">SeaGull In Pictures...!<h1>
+		<br>
+		<img src="1.jpg" class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding:20px; border-radius:3px solid #ooo;"></img>
+		<img src="2.jpg" class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding:20px;"></img>
+		<img src="3.jpg" class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding:20px;"></img>
+		<img src="4.jpg" class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding:20px;"></img>
+	
+		<h1 id="aboutus" style="padding:30px">About Alibaug</h1>
+		<P style="text-align:justify; padding:20px;">
+			Alibag is the a small town on the coast of the Arabian Sea, with a vast seashore stretching from Rewas to Revdanda. Alibag is famous for coconut and betelnut plantations and a large number of historic places to visit. Lately Alibag has become a preferred weekend holiday destination for people from Mumbai looking for an beautiful getaway from the hustle and bustle of urban Mumbai.
+			Alibag used to be the headquarters the great Maratha Admiral, Kanhoji Angre and has the famous Kolaba fort in the sea. Kanhoji Angre created the town of Alibag towards end of 17th century. Legend has it that a wealthy Muslim named Ali Owned many plantations, which gave the town the name Alibag. Alibag is the seat of District Administration of Raigad (formerly Kolaba) district since 1852. The name Kolaba is attributed to a Sea Fort Kolaba built by Shivaji the great, in 1680 to fight the mighty naval prowess of the Siddis' (Abyssenians) of Janjira and the British of Mumbai. Kolaba fort is famous for many battles, between Siddis and Kanhoji Angre, the British and the Portugese.
+		</p>
+			<img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="fort.jpg" style="width:100%; height:auto;" ></img>
+		<br>
+		<p style="text-align:justify;  padding:20px;">
+			The Kolaba Fort is accessible only at low ebb through a 1 km long land strip that is covered during high tide. The fort has a sweet water well in the middle, temples, fortifications and guns facing the sea. Being on the fort gives you a taste of the history of Alibag.
+		Alibag is surrounded by beautiful pristine beaches such as Aakshi, Nagaon , Kihim, Kashid (white sand beaches) etc. Other places of interest are the Vikram Vinayaka temple, Revdanda, Vikram Ispat factory, Kanakeshwar, temples of Sri Datta, Shitala Devi, Hingulja Devi, Sri Rameshwar.
+		Alibag produces classic local products like seasonal white onions, tamrind balls, tender coconut, dried fish of tremendous variety, water melons, palm fruit (Tadgola) Jamun, Mangoes of local and Alphonso variety, Flowers with intense fragnance like Sonchampa, Bakul etc. Fresh fish such as Pomfret, Surmai, Ghol, Saranga are also available in the Alibag.
+		Alibag provides an excellent holiday destination as well as a great place to visit historical landmarks.
+		</p>
+		
+		<h1 style="padding:30px">About Our Farmhouse</h1>
+		
+		
+	
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h1 style="padding-left:50px">Rates</h1>	
+	<div class="table">	
+		<table id="customers">
+			<tr>
+				<th>ROOM</th>
+				<th>PEOPLE</th>
+				<th>RATE</th>
+			</tr>
+			<tr>
+				<td>Double Family Room</td>
+				<td>6 </td>
+				<td>2400/-</td>
+			</tr>
+			<tr>
+				<td>Family Room</td>
+				<td>4</td>
+				<td>1600/-</td>
+			</tr>
+			<tr>
+				<td>Couple Room</td>
+				<td>2 </td>
+				<td>1200/-</td>
+			</tr>
+
+
+</table>
+</div>
+</div>
+
+<h1 style="padding-left:50px">Food</h1>
+<div  class="table">	
+		<table id="customers">
+			<tr>
+				<th>DISH</th>
+				<th>PRICE</th>
+			</tr>
+			<tr style="color:#000; background-color:#badfdb;">
+				<td colspan="2">Breakfast</td>
+				
+			</tr>
+			<tr>
+				<td>Poha, Upama, Omlet-Pav</td>
+				<td>30/-</td>
+			</tr>
+			<tr>
+				<td>Burji Pav</td>
+				<td>40/-</td>
+			</tr>
+			<tr>
+				<td>Tea,Coffee,Milk</td>
+				<td>10/-</td>
+			</tr>
+			<tr style="color:#000; background-color:#badfdb;">
+				<td colspan="2">Veg. Thali</td>
+			</tr>
+			<tr>
+				<td>Veg.Thali</td>
+				<td>160/-</td>
+			</tr>
+			<tr style="color:#000; background-color:#badfdb;">
+				<td colspan="2">Fish Thali</td>
+			</tr>
+			<tr>
+				<td>Surmai Thali</td>
+				<td>350/-</td>
+			</tr>
+			<tr>
+				<td>Paplet, Bangada, kolambi Thali</td>
+				<td>300/-</td>
+			</tr>
+			<tr style="color:#000; background-color:#badfdb;">
+				<td colspan="2">Non Veg. Thali</td>
+			</tr>
+			<tr>
+				<td>Chicken Thali</td>
+				<td>300/-</td>
+			</tr>
+			<tr>
+				<td>Egg Thali</td>
+				<td>150/-</td>
+			</tr>
+			<tr style="color:#000; background-color:#badfdb;">
+				<td colspan="2">Fish</td>
+			</tr>
+			<tr>
+				<td>Chicken Handi(1kg)</td>
+				<td>500/-</td>
+			</tr>
+			<tr>
+				<td>paplet Fry</td>
+				<td>200/-</td>
+			</tr>
+			<tr>
+				<td>Surmai Fry</td>
+				<td>200/-</td>
+			</tr>
+			<tr>
+				<td>Bangada Fry</td>
+				<td>200/-</td>
+			</tr>
+			<tr>
+				<td>Bhakari</td>
+				<td>20/-</td>
+			</tr>
+			<tr>
+				<td>Chapati</td>
+				<td>10/-</td>
+			</tr>
+	</table>
+</div>
+		
+		<h1 style="padding-left:50px">Address</h1>
+		<h3 style="padding:50px ; color:#000000; font-size:38px;"> Late. Vijay Kuthe Chouk, Mhatre Aali, Behind Ekvira Devi Mandir, Kihim Beach, Alibaug,  Raigad, 402208</h3>
+		
+		
+		
+		
+		
+		
+	<div class="card-login" style="padding:25px;">
+		<h1 id="contact">Contact Us........!</h1>
+			<div class="prinput">	
+				<form action="mail.php" method="post">
+				
+				
+					<input type="text" class="name" name="fName" placeholder="First Name" required="required" >
+					
+				
+					<input type="text" class="name" name="lName" placeholder="Last Name" required="required">
+					
+					
+					<input type="email" class="name" name="Email" title="Plese enter valid email with @xyz.domain" placeholder="Email" required="required">
+					
+					
+					<input type="tel" name="Phone" placeholder="Phone no" pattern="[7-9]{1}[0-9]{9}" title="Phone number with 7-9 and remaing 9 digit with 0-9" required="required">
+					
+					
+					<br>
+					<h4>Check-In Date</h4> 
+					<input type="date" name="CinDate" title="please enter check-In Date" required="required">
+					
+					
+					<br>
+					<h4>Check-Out Date</h4>
+					<input type="date" name="CotDate" title="please enter check-Out Date" required="required">
+					
+					
+					<input type="text" name="People" placeholder="Enter No. of peoples coming " required="required">
+					
+					
+					<input type="text" name="Code" placeholder="Enter name of room " required="required">
+					
+					
+					<textarea name="YourMsg" placeholder="Your Message"></textarea>
+					
+					
+					<input type="submit" value="Send Message">
+				
+				</form>
+			</div>
+	</div>
+	</div>
+	</div>
+	
+	
+	
+	
+	<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="footer" align="center" style="color:#fff;">
+		<marquee direction="left" scrollamount="3">
+		Developed By "SHIRKE SOLUTIONS" : | contact: 8788114797 / 9527474361 | Gmail: prathmesh.shirke.45@gmail.com | Instagram: @pppppprathmesh__ |
+ 		</marquee>
+		</div>
+		
+	</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
